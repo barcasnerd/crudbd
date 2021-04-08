@@ -1,21 +1,29 @@
--- to create a new database
-CREATE DATABASE crudnodejsmysql;
+--Se crea la base de datos
+CREATE DATABASE bienestar;
 
--- to use database
-use crudnodejsmysql;
+--Se usa la base de datos
+USE bienestar;
 
--- creating a new table
-CREATE TABLE customer (
-  id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(50) NOT NULL,
-  address VARCHAR(100) NOT NULL,
-  phone VARCHAR(15)
+--Se crea la tabla padre
+CREATE TABLE PADRE (
+  id INT NOT NULL,
+  nom VARCHAR(20) NOT NULL,
+  PRIMARY KEY (id)
 );
 
--- to show all tables
+--Se crea la tabla hijo
+CREATE TABLE HIJO (
+  id INT NOT NULL,
+  nom INT NOT NULL,
+  hijode INT NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (hijode) REFERENCES PADRE(id)
+);
+
+--Se muestran todas las tablas
 show tables;
 
--- to describe table
+--Se describe la tabla
 describe customer;
 
 
