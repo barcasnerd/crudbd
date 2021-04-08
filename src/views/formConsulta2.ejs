@@ -1,0 +1,30 @@
+<% include partials/_header %>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <td>ID</td>
+                        <td>Nombre</td>
+                    </thead>
+                    <tbody>
+                        <% if (data) { %>
+                            <% for(var i=0; i < data.length; i++) { %>
+                                <tr>
+                                    <td>
+                                        <%= data[i].id %>
+                                    </td>
+                                    <td>
+                                        <%= data[i].nom %>
+                                    </td>
+                                </tr>
+                                <% } %>
+                                    <% } %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <% include partials/_footer %>

@@ -18,8 +18,7 @@ controller.edit = (req, res) => {
     const { id } = req.params;
     req.getConnection((err, conn) => {
         conn.query("SELECT * FROM hijo WHERE hijode = ?", [id], (err, rows) => {
-            console.error('consulta:')
-            console.log(rows[1].id)
+            console.error(err);
             res.render('resConsulta1', {
                 data: rows
             })
@@ -44,11 +43,11 @@ controller.hijoSinPadre = (req, res) => {
 
 controller.padreSinHijo = (req, res) => {
     req.getConnection((err, conn) => {
-        conn.query('SELECT * FROM padre p WHERE NOT EXISTS(SELECT NULL FROM hijo h WHERE h.hijode=P.id)', (err, padre) => {
+        conn.query('SELECT * FROM padre p WHERE NOT EXISTS(SELECT NULL FROM hijo h WHERE h.hijode=p.id)', (err, padre) => {
             if (err) {
                 res.json(err);
             }
-            res.render('formConsulta1', {
+            res.render('formConsulta2', {
                 data: padre
             });
         });
