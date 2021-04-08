@@ -21,7 +21,7 @@ app.use(myConnection(mariadb, {
   user: 'root',
   password: 'root',
   port: 3306,
-  database: 'bienestar'
+  database: 'db'
 }, 'single'));
 app.use(express.urlencoded({extended: false}));
 
