@@ -1,3 +1,8 @@
-# CRUD para la clase de Base de Datos Grupo 1
+# CRUD Nodejs and Mysql
+this is a basic application crud that uses nodejs in the backend, mysql as database.
 
-Luego de clonar el proyecto en su computadora, no olviden ejecutar `npm i` para que se instalen todos los paquetes que se necesitan.
+# Usefull Commands
+- to init mysql: `mysql -u root -p`
+
+# links
+- [bootstrap 4 theme](https://bootswatch.com/4/lux/bootstrap.min.css)
