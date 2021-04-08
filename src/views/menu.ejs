@@ -1,0 +1,83 @@
+<% include partials/_header %>
+
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <span></span>
+      </div>
+      <div class="col-8">
+        
+        <div class="card mt-5">
+            <div class="card-header">
+              CRUD
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Acceso a tabla HIJO</h5>
+              <p class="card-text">Crea, actualiza, elimina o agrega información a la tabla hijo.</p>
+              <a href="/hijo" class="btn btn-success">Accerder</a>
+            </div>
+          </div>
+
+          <div class="card mt-5">
+            <div class="card-header">
+              CRUD
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Acceso a tabla PADRE</h5>
+              <p class="card-text">Crea, actualiza, elimina o agrega información a la tabla padre.</p>
+              <a href="/padre" class="btn btn-success">Accerder</a>
+            </div>
+          </div>
+
+          <div class="card mt-5">
+            <div class="card-header">
+              CONSULTA 1
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Hijos de un padre seleccionado</h5>
+              <p class="card-text">Selecciona un padre de la tabla para ver todos sus hijos asociados.</p>
+              <a href="/consulta1" class="btn btn-success">Consultar</a>
+            </div>
+          </div>
+
+          <div class="card mt-5">
+            <div class="card-header">
+              CONSULTA 2
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Padres sin hijos</h5>
+              <p class="card-text">Consulte aquí información sobre los padres que no registran hijos.</p>
+              <a href="/consulta1/padreSinHijo" class="btn btn-success">Consultar</a>
+            </div>
+          </div>
+
+          <div class="card mt-5">
+            <div class="card-header">
+              CONSULTA 3
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Hijos sin padres</h5>
+              <p class="card-text">Consulte aquí el listados de los hijos que no registran un padre.</p>
+              <a href="/consulta1/hijoSinPadre" class="btn btn-success">Consultar</a>
+            </div>
+          </div>
+
+          <div class="card mt-5">
+            <div class="card-header">
+              CONSULTA 4 
+            </div>
+            <div class="card-body mb-5">
+              <h5 class="card-title">Padres con numero de hijos</h5>
+              <p class="card-text">Consulte aquí los padres que tienen hijos con su respectiva cantidad.</p>
+              <a href="/consulta1/numeroHijos" class="btn btn-success">Consultar</a>
+            </div>
+          </div>
+
+      </div>
+      <div class="col">
+        <span></span>
+      </div>
+    </div>
+</div>
+
+<% include partials/_footer %>

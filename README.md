@@ -1,2 +1,8 @@
-# CRUD Nodejs con MariaDB
-Una aplicación básica CRUD que usa [nodejs](https://nodejs.org/en/) en el backend y [mariadb](https://mariadb.org/) como base de datos.
+# Bienestar crud
+ Taller 3 para la asignatura de Base de Datos
+ #### Grupo 1:
+ Jair Barcasnegras
+ Martin Fuentes
+ Helymar Acosta
+ Santiago Palmet
+ Omar Amell
