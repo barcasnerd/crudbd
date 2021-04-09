@@ -14,7 +14,7 @@ const rutaConsulta1 = require('./routes/consulta1');
 
 
 // configuraciones de puerto
-app.set('port', process.env.PORT || 5000);
+app.set('port', process.env.PORT || 3500);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
