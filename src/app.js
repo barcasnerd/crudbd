@@ -40,5 +40,5 @@ app.use('/consulta1', rutaConsulta1);
 // indicando los archivos publicos del lado del cliente
 app.use(express.static(path.join(__dirname, 'public')));
 
-// inicializando el servidor
+// inicializando el servidor de arranque
 app.listen(PORT);
