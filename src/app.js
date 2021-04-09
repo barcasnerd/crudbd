@@ -21,11 +21,11 @@ app.set('view engine', 'ejs');
 // middlewares
 app.use(morgan('dev'));
 app.use(poolConection(mariadb, {
-  host: 'localhost',
-  user: 'root',
-  password: 'root',
+  host: 'us-cdbr-east-03.cleardb.com',
+  user: 'b52e1d6d9e032d',
+  password: '00674410',
   port: 3306,
-  database: 'bienestar'
+  database: 'heroku_3b8c04c88cc81e3'
 }, 'single'));
 app.use(express.urlencoded({ extended: false }));
 
