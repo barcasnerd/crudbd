@@ -16,12 +16,10 @@
   "node": "14.16.1",
   "npm": "7.8.0"
   },
-  "scripts": {
-  "start": "node app.js"
-  },
   "devDependencies": {},
   "scripts": {
-    "dev": "nodemon src/app.js"
+    "dev": "nodemon src/app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
