@@ -3,13 +3,42 @@
   <head>
     <meta charset="UTF-8">
     <title>Bienestar</title>
+
     <!-- NAVIGATION -->
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    
   </head>
   <body>
 
     <!-- navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-      <a class="navbar-brand" style="padding-left: 10%; font-size: x-large; margin-top: 0%;" href="/">Bienestar</a>
-    </nav>
-    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/hijo">Hijos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/padre">Padres</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Consultas</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/consulta1">Ver hijos de un padre</a>
+              <a class="dropdown-item" href="/consulta1/padreSinHijo">Ver padres sin hijos</a>
+              <a class="dropdown-item" href="/consulta1/hijoSinPadre">Ver hijos sin padres</a>
+              <a class="dropdown-item" href="/consulta1/numeroHijos">Ver padres con numeros de hijos</a>
+            </div>
+          </li>
+        </ul>
+        <a class="navbar-brand" href="/">BIENESTAR</a>
+      </div>
+    </nav>    
