@@ -14,7 +14,7 @@ const rutaConsulta1 = require('./routes/consulta1');
 
 
 // configuraciones de puerto
-app.set('port', process.env.PORT || 3500);
+const PORT = process.env.PORT || 3000;
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -41,6 +41,4 @@ app.use('/consulta1', rutaConsulta1);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // inicializando el servidor
-app.listen(app.get('port'), () => {
-  console.log(`server on port ${app.get('port')}`);
-});
+app.listen(PORT);
