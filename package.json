@@ -20,8 +20,8 @@
   "nodemon": "^1.18.10"
   },
   "scripts": {
-    "dev": "nodemon src",
-    "start": "node src"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
