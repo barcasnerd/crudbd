@@ -81,7 +81,7 @@ Asegúrese de actualizar las pruebas según corresponda.
 ## Autores
 Este sistema de información fue creado por: 
 
-- [Martin Fuentes](https://github.com/fuentesDeveloper)
+- [Martin Fuentes](https://github.com/Euphorichuman)
 - [Jair Barcasnegras](https://github.com/theblackbar)
 - [Helymar Acosta](https://github.com/helymar)
 - [Santiago Palmet](https://github.com/pantosta0)
@@ -89,6 +89,6 @@ Este sistema de información fue creado por:
 
 ## Licencia 
 
-Este proyecto está bajo la licencia [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
+Este proyecto está bajo la licencia [Apache License 2.0](https://github.com/theblackbar/crudbd/blob/master/LICENSE).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc/4.0/) 
+[APACHE LICENSE, VERSION 2.0](http://www.apache.org/licenses/LICENSE-2.0)
